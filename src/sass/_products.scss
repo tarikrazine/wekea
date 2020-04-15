@@ -1,0 +1,115 @@
+.products {
+  grid-column: center-start / center-end;
+  margin: 15rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  justify-items: center;
+  gap: 7rem;
+
+  &__btn {
+    justify-self: stretch;
+    align-self: stretch;
+  }
+}
+
+.product {
+  background-color: $color-grey-light-1;
+  position: relative;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 20rem 7rem repeat(2, min-content);
+  row-gap: 2.5rem;
+
+  backface-visibility: hidden;
+
+  &__image {
+    width: 90%;
+    height: 90%;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    z-index: 0;
+    align-self: center;
+    justify-self: center;
+    transition: all 0.3s;
+  }
+
+  &:hover &__image {
+    transform: scale(1.1);
+  }
+
+  &__heart-box {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  &__heart {
+    width: 100%;
+  }
+
+  &__name {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: end;
+    z-index: 1;
+
+    width: 80%;
+    background-color: $color-grey-dark-1;
+    color: $color-grey-light-1;
+    text-align: center;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 1.25rem;
+    font-weight: 500;
+    transform: translateY(50%);
+  }
+
+  &__details {
+    grid-column: 1 / -1;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  &__size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__tools-box {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+  }
+
+  &__tools {
+    width: 100%;
+  }
+
+  &__wallet-box {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+  }
+
+  &__wallet {
+    width: 100%;
+  }
+
+  &__btn {
+    grid-column: 1 / -1;
+  }
+}

@@ -1,0 +1,70 @@
+.heading-primary {
+  font-size: 4rem;
+  color: $color-grey-light-1;
+  line-height: 1;
+}
+
+.heading-secondary {
+  font: {
+    size: 4rem;
+    weight: 800;
+  }
+  line-height: 1;
+
+  &--color-primary-dark {
+    color: $color-primary-dark;
+  }
+
+  &--color-primary-medium {
+    color: $color-primary-medium;
+  }
+
+  &--color-primary-light {
+    color: $color-primary-light;
+  }
+
+  &--light {
+    color: $color-grey-light-1;
+  }
+
+  &--dark {
+    color: $color-grey-dark-1;
+  }
+
+  &--italic {
+    font-style: italic;
+  }
+}
+
+.heading-tertiary {
+  font-size: 1.7rem;
+  font-weight: 500;
+
+  &--color-primary-dark {
+    color: $color-primary-dark;
+  }
+
+  &--color-primary-medium {
+    color: $color-primary-medium;
+  }
+
+  &--color-primary-light {
+    color: $color-primary-light;
+  }
+
+  &--light {
+    color: $color-grey-light-1;
+  }
+
+  &--dark {
+    color: $color-grey-dark-1;
+  }
+
+  &--upper {
+    text-transform: uppercase;
+  }
+}
+
+.paragraph {
+  font-size: 1.5rem;
+}

@@ -1,0 +1,44 @@
+.footer {
+  background-color: $color-grey-dark-1;
+  grid-column: full-start / full-end;
+  padding: 8rem 8rem 4rem 8rem;
+}
+
+.nav {
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  align-items: center;
+
+  &__item {
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      display: block;
+      color: $color-grey-light-1;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      text-align: center;
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      text-shadow: 0 0.5rem 1.5rem rgba($color-grey-light-1, 0.4);
+      color: $color-white;
+    }
+  }
+}
+
+.copyright {
+  font-size: 1.6rem;
+  color: $color-grey-light-1;
+  text-align: center;
+  margin-top: 6rem;
+}

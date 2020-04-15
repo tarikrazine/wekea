@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Gotu&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px / 16px = 62.5%
+
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  /* @include respond(tab-port) {
+    // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  } */
+
+  @include respond(desktop) {
+    font-size: 75%; //1rem = 12, 12/16
+  }
+
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Gotu', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  color: $color-grey-dark-2;
+}

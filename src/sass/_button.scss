@@ -1,0 +1,24 @@
+.btn {
+  &,
+  &:link,
+  :visited {
+    display: inline-block;
+    font-size: 1.6rem;
+    background-color: $color-primary-light;
+    color: $color-white;
+    border: none;
+    border-radius: 0;
+    padding: 1.5rem 3rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    text-align: center;
+  }
+
+  &:hover {
+    background-color: $color-primary-medium;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

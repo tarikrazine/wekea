@@ -1,2 +1,2 @@
 # wekea
-wekea Modern Home Office Design
+wekea Modern Office Design

@@ -1,0 +1,45 @@
+.best-seller {
+  background-color: $color-black;
+  grid-column: col-end 6 / full-end;
+
+  @include respond(phone) {
+    grid-column: full-start / full-end;
+    padding: 5rem;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__list {
+    display: grid;
+    grid-template-columns: min-content minmax(10rem, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 5vh;
+    align-items: center;
+
+    @include respond(phone) {
+      grid-template-columns: repeat(auto-fit, min-content minmax(10rem, 1fr));
+    }
+  }
+
+  &__details {
+  }
+
+  &__image {
+    display: block;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+  }
+
+  &__heading {
+    font-size: 1.5rem;
+    color: $color-grey-light-1;
+  }
+
+  &__text {
+    color: $color-primary-medium;
+  }
+}
